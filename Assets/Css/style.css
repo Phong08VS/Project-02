@@ -439,6 +439,10 @@ a {
     text-decoration-line: underline;
 }
 
+.Main .Course .info a:hover {
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);
+}
+
 .Main .Course .content {
     display: flex;
     gap: 47px;
