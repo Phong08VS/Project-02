@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-info: #767E7E;
+    --font-content: #9DA6A5;
+}
+
+html {
+    /* Quy đổi 1 rem thành 10 px để dễ tính toán hơn */
+    font-size: 62.5%;
+}
+
+body {
+    /* Đặt lại kích thước ban đầu cho phần tử gốc là 16px */
+    font: 1.6rem;
+    font-family: "Poppins", serif;
+}
+
+/* ===================================================== common ===================================================== */
+
+.main-content {
+    width: 1170px;
+    width: calc(100% - 270px);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Heading-lv2 {
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ===================================================== header ===================================================== */
+
+/* ===================================================== menu ===================================================== */
+.header .menu {
+    padding: 12px 0px 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo .BG-IconLogo {
+    display: inline-flex;
+    background-color: #ececec;
+    padding: 9px;
+    border-radius: 50%;
+    align-items: center;
+    justify-self: center;
+    margin-right: 5.72px;
+}
+
+.header .logo .Icon-logo {
+    width: 15px;
+    height: 15px;
+}
+
+.header .Besnik-parent .Besnik {
+    margin-right: 3.58px;
+}
+
+.header .menu .nav {
+    margin: 12px 0;
+}
+
+.header .menu .nav ul {
+    display: flex;
+}
+
+.header .menu .nav li:not(li:last-child) {
+    margin-right: 40px;
+}
+
+.header .menu .nav a {
+    color: #2F3A3B;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.header .menu .nav a.Active {
+    font-weight: 600;
+}
+
+.header .menu .button {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu .btn {
+    color: #494949;
+    font-size: 1.6rem;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.header .menu .btn-sign-in {
+    margin-right: 24px;
+}
+
+.header .menu .btn-sign-up {
+    color: #1EBFC1;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid currentColor;
+    padding: 12px 24px;
+    background: #FFF;
+}
+
+.header .menu .btn-sign-up:hover {
+    background: #a1d5dd;
+    color: #FFF;
+}
+
+/* ===================================================== info-header ===================================================== */
+.header .Body {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+}
+
+.header .info {
+    width: 39%;
+    margin-top: 93px;
+}
+
+.header .info .note {
+    color: var(--font-info);
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.header .info .heading {
+    font-size: 6.2rem;
+    line-height: 1.16;
+    margin-bottom: 46px;
+}
+
+.header .info .desc {
+    color: var(--font-content);
+    font-size: 1.8rem;
+    line-height: 1.78;
+    margin-bottom: 52px;
+}
+
+.header .info .button {
+    display: flex;
+}
+
+.header .info .btn-GetStarted {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+    padding: 21px 41px;
+    border-radius: 14px;
+    background: #1EBFC1;
+    border: 1px solid transparent;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.header .info .btn-GetStarted:hover {
+    background: #a1d5dd;
+}
+
+.header .info .btn-right {
+    display: block;
+    margin-left: 50px;
+}
+
+.header .info .btn-right img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.09);
+}
+
+/* ===================================================== content-header ===================================================== */
+.header .content {
+    width: 61%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header .content .Image-content {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.header .content .card1 {
+    width: 157px;
+    height: 75px;
+    border-radius: 1.8rem;
+    background: #FEFEFD;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 148px;
+    right: 459px;
+}
+
+.header .content .icon-book {
+    margin-left: 25px;
+    position: relative;
+}
+
+.header .content .icon {
+    width: 36px;
+    height: 40px;
+}
+
+.header .content .card1 .desc {
+    margin-left: 16px;
+}
+
+.header .content .item-icon {
+    width: 28px;
+    height: 4px;
+    background: #FFF;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 8px;
+    right: 4px;
+}
+
+.header .content .card2 {
+    position: absolute;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    bottom: 46px;
+    right: 517px;
+}
+
+.header .content .card2 .desc {
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 36px;
+}
+
+.header .content .card2 .Schedules-item {
+    margin: 16px 25px 0px;
+}
+
+.header .content .card2 .Schedules {
+    width: 74px;
+    height: 6px;
+}
+
+.header .content .card2 .Schedules:first-child {
+    margin-bottom: 12px;
+}
+
+.header .content .card2 .Schedules:last-child {
+    margin-top: 10px;
+}
+
+.header .content .card2 .last-Schedules {
+    width: 26px;
+    height: 6px;
+    border-radius: 3px;
+    background: #EDF1F5;
+    margin-top: 16px;
+    margin-left: 49px;
+}
+
+.header .content .card3 {
+    position: absolute;
+    bottom: 45px;
+    right: 41px;
+    width: 207px;
+    height: 90px;   
+    border-radius: 24px;
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.header .content .Content-card3 {
+    margin: 17px 35px;
+}
+
+.header .content .card3 .desc {
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.header .content .card3 .flex-avatar {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.header .content .card3 .avatar {
+    margin-left: -8px;
+}
+
+.header .content .card3 .avatar img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 33px;
+}
+
+.header .content .card3 .avatar:last-child {
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+    background: #1EBFC1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .content .card3 .avatarDesc {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    cursor: default;
+}
+
