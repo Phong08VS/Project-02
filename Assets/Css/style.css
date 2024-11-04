@@ -53,11 +53,13 @@ a {
     justify-content: space-between;
 }
 
+.Footer .footer-item .logo,
 .header .logo {
     display: flex;
     align-items: center;
 }
 
+.Footer .footer-item .logo .BG-IconLogo,
 .header .logo .BG-IconLogo {
     display: inline-flex;
     background-color: #ececec;
@@ -68,11 +70,13 @@ a {
     margin-right: 5.72px;
 }
 
+.Footer .footer-item .logo .Icon-logo,
 .header .logo .Icon-logo {
     width: 15px;
     height: 15px;
 }
 
+.Footer .footer-item .Besnik-parent .Besnik,
 .header .Besnik-parent .Besnik {
     margin-right: 3.58px;
 }
@@ -689,4 +693,81 @@ a {
 
 .Main .admit .content .btn:hover {
     background: #a1d5dd;
+}
+
+/* ===================================================== Footer ===================================================== */
+/* Đã tái sử dụng phần Logo dùng chung style với logo ở phần header*/
+.Footer .main-content {
+    padding-bottom: 50px;
+}
+
+.Footer .footer-item {
+    margin-top: 100px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .footer-item .logo {
+    align-self: flex-start;
+}
+
+.Footer .footer-item .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer .footer-item .item .title {
+    margin-bottom: 26px;
+}
+
+.Footer .footer-item .item .title.last-title {
+    margin-bottom: 18px;
+}
+
+.Footer .footer-item .item1 a:nth-child(3) {
+    margin: 19px 0px;
+}
+
+.Footer .footer-item .item2 a:nth-of-type(even) {
+    margin: 18px 0px 21px 0px;
+}
+
+.Footer .footer-item .item2 a:last-of-type {
+    margin: 18px 0 0 0;
+}
+
+.Footer .footer-item .item3 a:last-of-type {
+    margin-top: 18px;
+}
+
+.Footer .footer-item .item4 .Social-meida:not(.notmargin) {
+    margin-bottom: 18px;
+}
+
+.Footer .footer-item .item4 .Social-meida {
+    display: flex;
+    gap: 9px;
+}
+
+.Footer .footer-item .item .title {
+    color: #2E2E2E;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Footer .footer-item .item .desc {
+    color: #535353;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.Footer .CopyRight {
+    color: #B0B5B4;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    margin: 80px 0px 50px 0px;
 }
